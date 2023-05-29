@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Split Site</title>
+    <!-- everything above here is boilerplate code and not further relevant -->
+    <style>
+        body {
+            display: flex; /* prevents weird whitespace issues */
+            margin: 0; /* makes the website take up the whole window */
+        }
+
+        section {
+            display: inline-block; /* inline: allows multiple side by side. block: allows for more complex styling */
+            width: 50%; /* make each section have a width of 50% of the window */
+            height: 100vh; /* make the sections take up 100% of the vertical height of the window */
+            overflow-y: auto; /* if the content of a section does not fit, the section will be scrollable vertically (on the y axis) */
+            /* the following css is irrelevant styling */
+            font-size: 20vmin;
+            word-wrap: break-word;
+        }
+
+        section:nth-child(1) {
+            background-color: yellow;
+        }
+        section:nth-child(2) {
+            background-color: beige;
+        }
+    </style>
+</head>
+<body>
+    <!-- the two sections and their content (the posts would be where the lorem ipsum text currently is)-->
+    <section>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, tenetur?
+    </section>
+    <section>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, earum!
+    </section>
+</body>
+</html>
