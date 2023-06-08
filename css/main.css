@@ -145,3 +145,8 @@ nav ul li a:hover {
     margin: 40px 0;
   }
 }
+
+img.animated-png{
+  width: 60px;
+  height: auto;
+}
